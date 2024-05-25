@@ -8,6 +8,10 @@ body {
     /* margin: 0; */
 }
 
+.none-select {
+    user-select: none;
+    -webkit-user-select: none;
+}
 .view {
     position: absolute;
     display: grid;
@@ -35,8 +39,8 @@ body {
     background-color: black;
     border: solid 1px #000;
     border-radius: 100%;
-    grid-column: 3;
-    grid-row: 7 / 4;
+    grid-column: 2;
+    grid-row: 7 / 9;
 }
 
 .staves-grid {
@@ -78,7 +82,7 @@ body {
     grid-row: 3;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: repeat(64, 1fr)
+    grid-template-columns: repeat(64, 1fr);
 }
 .white-tiles-grid {
     position: absolute;
@@ -87,7 +91,7 @@ body {
     grid-row: 3;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: repeat(16, 1fr)
+    grid-template-columns: repeat(16, 1fr);
 }
 
 .white-tile {

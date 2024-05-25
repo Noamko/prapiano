@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Piano Tiles</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="view">
@@ -20,38 +21,38 @@
         </div>
 
         <div class="piano-container">
-            <div class="black-tiles-grid">
-                <div class="black-tile" style="grid-column: 4 / 6;"></div>
-                <div class="black-tile" style="grid-column: 8 / 10;"></div>
-                <div class="black-tile" style="grid-column: 16 / 18;"></div>
-                <div class="black-tile" style="grid-column: 20 / 22;"></div>
-                <div class="black-tile" style="grid-column: 24 / 26;"></div>
-                <div class="black-tile" style="grid-column: 32 / 34;"></div>
-                <div class="black-tile" style="grid-column: 36 / 38;"></div>
-                <div class="black-tile" style="grid-column: 44 / 46;"></div>
-                <div class="black-tile" style="grid-column: 48 / 50;"></div>
-                <div class="black-tile" style="grid-column: 52 / 54;"></div>
-                <div class="black-tile" style="grid-column: 60 / 62;"></div>
-                <div class="black-tile" style="grid-column: 64 / 66;"></div>
+            <div id="black-tiles" class="black-tiles-grid">
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 1)"  onmousedown="TileClick('black', 1)" style="grid-column: 4 / 6;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 2)"  onmousedown="TileClick('black', 2)" style="grid-column: 8 / 10;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 3)"  onmousedown="TileClick('black', 3)" style="grid-column: 16 / 18;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 4)"  onmousedown="TileClick('black', 4)" style="grid-column: 20 / 22;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 5)"  onmousedown="TileClick('black', 5)" style="grid-column: 24 / 26;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 6)"  onmousedown="TileClick('black', 6)" style="grid-column: 32 / 34;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 7)"  onmousedown="TileClick('black', 7)" style="grid-column: 36 / 38;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 8)"  onmousedown="TileClick('black', 8)" style="grid-column: 44 / 46;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 9)"  onmousedown="TileClick('black', 9)" style="grid-column: 48 / 50;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 10)" onmousedown="TileClick('black', 10)" style="grid-column: 52 / 54;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 11)" onmousedown="TileClick('black', 11)" style="grid-column: 60 / 62;"></div>
+                <div class="black-tile none-select" onmouseup="restoreBackground('black', 12)" onmousedown="TileClick('black', 12)" style="grid-column: 64 / 66;"></div>
             </div>
-            <div class="white-tiles-grid">
-                <div class="white-tile" style="grid-column: 1;" ></div>
-                <div class="white-tile" style="grid-column: 2;"></div>
-                <div class="white-tile" style="grid-column: 3;"></div>
-                <div class="white-tile" style="grid-column: 4;"></div>
-                <div class="white-tile" style="grid-column: 5;"></div>
-                <div class="white-tile" style="grid-column: 6;"></div>
-                <div class="white-tile" style="grid-column: 7;"></div>
-                <div class="white-tile" style="grid-column: 8;"></div>
-                <div class="white-tile" style="grid-column: 9;"></div>
-                <div class="white-tile" style="grid-column: 10;"></div>
-                <div class="white-tile" style="grid-column: 11;"></div>
-                <div class="white-tile" style="grid-column: 12;"></div>
-                <div class="white-tile" style="grid-column: 13;"></div>
-                <div class="white-tile" style="grid-column: 14;"></div>
-                <div class="white-tile" style="grid-column: 15;"></div>
-                <div class="white-tile" style="grid-column: 16;"></div>
-                <div class="white-tile" style="grid-column: 17;"></div>
+            <div id="white-tiles" class="white-tiles-grid">
+                <div class="white-tile none-select" touchstart="hello()" onmouseup="restoreBackground('white', 1)" onmousedown="TileClick('white', 1)" style="grid-column: 1;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 2)" onmousedown="TileClick('white', 2)" style="grid-column: 2;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 3)" onmousedown="TileClick('white', 3)" style="grid-column: 3;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 4)" onmousedown="TileClick('white', 4)" style="grid-column: 4;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 5)" onmousedown="TileClick('white', 5)" style="grid-column: 5;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 6)" onmousedown="TileClick('white', 6)" style="grid-column: 6;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 7)" onmousedown="TileClick('white', 7)" style="grid-column: 7;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 8)" onmousedown="TileClick('white', 8)" style="grid-column: 8;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 9)" onmousedown="TileClick('white', 9)" style="grid-column: 9;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 10)" onmousedown="TileClick('white', 10)" style="grid-column: 10;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 11)" onmousedown="TileClick('white', 11)" style="grid-column: 11;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 12)" onmousedown="TileClick('white', 12)" style="grid-column: 12;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 13)" onmousedown="TileClick('white', 13)" style="grid-column: 13;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 14)" onmousedown="TileClick('white', 14)" style="grid-column: 14;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 15)" onmousedown="TileClick('white', 15)" style="grid-column: 15;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 16)" onmousedown="TileClick('white', 16)" style="grid-column: 16;"></div>
+                <div class="white-tile none-select" onmouseup="restoreBackground('white', 17)" onmousedown="TileClick('white', 17)" style="grid-column: 17;"></div>
             </div>
         </div>
     </div>
